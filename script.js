@@ -59,13 +59,7 @@ I love you. More than words. More than time.`;
   function goTo(name) {
     Object.entries(stages).forEach(([k, el]) => el.classList.toggle('active', k === name));
   }
-
-  /* ---------- Sound ---------- */
-  $('soundToggle').addEventListener('click', () => {
-    soundOn = !soundOn;
-    $('soundIcon').textContent = soundOn ? '🔊' : '🔇';
-    if (soundOn) music.play().catch(()=>{}); else music.pause();
-  });
+  
 
   /* ---------- Heart burst ---------- */
   function heartBurst(container, count = 24) {
