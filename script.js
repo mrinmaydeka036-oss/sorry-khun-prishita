@@ -91,6 +91,8 @@ I love you. More than words. More than time.`;
     if (envelope.classList.contains('open')) return;
     envelope.classList.add('open');
     envWrap.classList.add('zooming');
+    music.currentTime = 0;
+    music.play().catch(() => {});
     heartBurst($('burst'), 20);
     if (soundOn) music.play().catch(()=>{});
     setTimeout(showLetter, 1600);
