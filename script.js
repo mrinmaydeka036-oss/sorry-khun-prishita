@@ -17,7 +17,8 @@ I love you. More than words. More than time.`;
   };
   const music = $('bgMusic');
   const video = $('romanticVideo');
-  let soundOn = false;
+  let soundOn = true;
+$('soundIcon').textContent = '🔊';
 
   /* ---------- Background particles ---------- */
   function spawn(container, className, count, styler) {
