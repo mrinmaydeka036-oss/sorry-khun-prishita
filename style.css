@@ -72,7 +72,8 @@ body{position:relative}
 .parchment-fold-top{top:33%}
 .parchment-fold-bottom{top:66%}
 .letter-title{font-family:'Great Vibes',cursive;font-size:44px;color:#7a1024;text-align:center;margin-bottom:20px;text-shadow:0 1px 0 rgba(255,220,180,.6)}
-.letter-body{font-family:'Dancing Script',cursive;font-size:22px;line-height:1.7;color:#3a1f14;white-space:pre-wrap;min-height:200px}
+.letter-body{font-family:'Dancing Script',cursive;font-size:22px;line-height:1.7;color:#ffffff;
+text-shadow:0 0 8px rgba(0,0,0,.8);white-space:pre-wrap;min-height:200px}
 .letter-body::after{content:"▍";color:#7a1024;animation:caret 1s steps(2) infinite}
 .letter-body.done::after{content:""}
 @keyframes caret{50%{opacity:0}}
