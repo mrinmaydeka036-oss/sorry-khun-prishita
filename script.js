@@ -10,11 +10,13 @@ I love you. More than words. More than time.`;
 
   const $ = (id) => document.getElementById(id);
   const stages = {
-    envelope: $('stageEnvelope'),
-    letter:   $('stageLetter'),
-    video:    $('stageVideo'),
-    final:    $('stageFinal'),
-  };
+  envelope: $('stageEnvelope'),
+  letter: $('stageLetter'),
+  question: $('stageQuestion'),
+  video: $('stageVideo'),
+  final: $('stageFinal'),
+};
+  
   const music = $('bgMusic');
   const video = $('romanticVideo');
   let soundOn = false;
