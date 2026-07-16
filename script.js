@@ -64,9 +64,8 @@ $('soundIcon').textContent = '🔊';
   /* ---------- Sound ---------- */
   $('soundToggle').addEventListener('click', () => {
     soundOn = !soundOn;
-    $('soundIcon').textContent = soundOn ? '🔊' : '🔇';
-    if (soundOn) music.play().catch(()=>{}); else music.pause();
-  });
+    $('soundIcon').textContent = soundOn ? '🔊' ;
+    music.play().catch(()=>{});
 
   /* ---------- Heart burst ---------- */
   function heartBurst(container, count = 24) {
