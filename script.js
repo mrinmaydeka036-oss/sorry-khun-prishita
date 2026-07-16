@@ -138,7 +138,11 @@ sign.classList.add('show');
     if (p && p.then) p.then(start).catch(() => setTimeout(showFinal, 800));
     else start();
   }
-  btnContinue.addEventListener('click', playVideo);
+  btnContinue.addEventListener('click', () => {
+    goTo('question');
+});
+
+document.getElementById('btnYes').addEventListener('click', playVideo);
   video.addEventListener('ended', showFinal);
   btnSkip.addEventListener('click', showFinal);
 
