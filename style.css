@@ -116,4 +116,36 @@ text-shadow:0 0 10px rgba(255,255,255,.4); white-space:pre-wrap;min-height:200px
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
        }
-       
+      #stageQuestion{
+    display:none;
+    align-items:center;
+    justify-content:center;
+}
+
+#stageQuestion.active{
+    display:flex;
+}
+
+.question-box{
+    background:rgba(255,255,255,.08);
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+}
+
+.question-box h1{
+    color:#fff;
+    margin-bottom:25px;
+    font-size:40px;
+}
+
+#btnYes{
+    padding:15px 40px;
+    border:none;
+    border-radius:40px;
+    font-size:22px;
+    background:#ff4d88;
+    color:#fff;
+    cursor:pointer;
+                } 
