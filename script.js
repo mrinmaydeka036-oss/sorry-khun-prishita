@@ -144,10 +144,15 @@ sign.classList.add('show');
     goTo('question');
 });
   
-  document.getElementById('btnYes').addEventListener('click', playVideo);
+  btnContinue.addEventListener('click', () => {
+    goTo('question');
 });
-  video.addEventListener('ended', showFinal);
-  btnSkip.addEventListener('click', showFinal);
+
+document.getElementById('btnYes').addEventListener('click', playVideo);
+
+video.addEventListener('ended', showFinal);
+btnSkip.addEventListener('click', showFinal);
+});
 
   /* ---------- Final ---------- */
   function showFinal() {
