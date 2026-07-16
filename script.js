@@ -18,14 +18,10 @@ I love you. More than words. More than time.`;
   const music = $('bgMusic');
   const video = $('romanticVideo');
   let soundOn = true;
-$('soundIcon').textContent = '🔊';
-  const stages = {
-  envelope: $('stageEnvelope'),
-  letter: $('stageLetter'),
-  video: $('stageVideo'),
-  final: $('stageFinal'),
-};
-
+$('soundIcon').textContent = '🔊',
+  };
+  
+  
   /* ---------- Background particles ---------- */
   function spawn(container, className, count, styler) {
     for (let i = 0; i < count; i++) {
