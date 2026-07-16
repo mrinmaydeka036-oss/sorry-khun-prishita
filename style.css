@@ -72,8 +72,7 @@ body{position:relative}
 .parchment-fold-top{top:33%}
 .parchment-fold-bottom{top:66%}
 .letter-title{font-family:'Great Vibes',cursive;font-size:44px;color:#7a1024;text-align:center;margin-bottom:20px;text-shadow:0 1px 0 rgba(255,220,180,.6)}
-.letter-body{font-family:'Dancing Script',cursive;font-size:22px;line-height:1.7;color:#ffffff;
-text-shadow:0 0 8px rgba(0,0,0,.8);white-space:pre-wrap;min-height:200px}
+.letter-body{font-family:'Dancing Script',cursive;font-size:22px;line-height:1.7;color:#3a1f14;white-space:pre-wrap;min-height:200px}
 .letter-body::after{content:"▍";color:#7a1024;animation:caret 1s steps(2) infinite}
 .letter-body.done::after{content:""}
 @keyframes caret{50%{opacity:0}}
@@ -115,34 +114,5 @@ text-shadow:0 0 8px rgba(0,0,0,.8);white-space:pre-wrap;min-height:200px}
 
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
-                      }
-       .stage-question{
-display:flex;
-justify-content:center;
-align-items:center;
-}
-
-.question-box{
-text-align:center;
-padding:40px;
-background:rgba(255,255,255,.08);
-border-radius:20px;
-backdrop-filter:blur(12px);
-}
-
-.question-box h1{
-color:#fff;
-font-size:42px;
-margin-bottom:25px;
-font-family:'Great Vibes',cursive;
-}
-
-#btnYes{
-padding:15px 45px;
-font-size:22px;
-border:none;
-border-radius:40px;
-background:#ff4d88;
-color:#fff;
-cursor:pointer;
-}
+       }
+       
