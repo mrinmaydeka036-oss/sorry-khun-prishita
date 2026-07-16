@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>For You — A Letter From Your Future Husband</title>
+<meta name="description" content="A cinematic romantic apology — open the envelope." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Ambient background -->
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-gradient"></div>
+  <div class="bg-vignette"></div>
+  <div class="particles" id="particles"></div>
+  <div class="petals" id="petals"></div>
+  <div class="sparks" id="sparks"></div>
+  <div class="floating-hearts" id="floatingHearts"></div>
+</div>
+
+<!-- Sound toggle -->
+<button class="sound-toggle" id="soundToggle" aria-label="Toggle sound">
+  <span id="soundIcon">🔇</span>
+</button>
+
+<!-- STAGE: Envelope -->
+<section class="stage stage-envelope active" id="stageEnvelope">
+  <div class="envelope-wrap">
+    <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open the letter">
+      <div class="env-back"></div>
+      <div class="env-body"></div>
+      <div class="env-flap">
+        <div class="wax-seal">
+          <span class="wax-heart">♥</span>
+          <div class="wax-shine"></div>
+        </div>
+      </div>
+      <div class="env-shadow"></div>
+    </div>
+    <p class="tap-hint">Tap the envelope</p>
+  </div>
+  <div class="heart-burst" id="burst"></div>
+</section>
+
+<!-- STAGE: Letter -->
+<section class="stage stage-letter" id="stageLetter">
+  <div class="parchment-wrap">
+    <article class="parchment" id="parchment">
+      <div class="parchment-fold-top"></div>
+      <div class="parchment-fold-bottom"></div>
+      <h1 class="letter-title">My Dearest Love,</h1>
+      <p class="letter-body" id="letterBody"></p>
+      <p class="letter-sign">— Your Future Husband</p>
+    </article>
+    <button class="btn-continue" id="btnContinue">Continue ▸</button>
+  </div>
+</section>
+
+<!-- STAGE: Video -->
+<section class="stage stage-video" id="stageVideo">
+  <div class="video-blackout" id="videoBlackout"></div>
+  <video id="romanticVideo" playsinline preload="auto">
+    <source src="Video.mp4" type="video/mp4" />
+  </video>
+  <button class="btn-skip" id="btnSkip">Skip ▸</button>
+</section>
+
+<!-- STAGE: Final -->
+<section class="stage stage-final" id="stageFinal">
+  <div class="final-inner">
+    <h1 class="final-text">I Love You Forever <span class="final-heart">❤️</span></h1>
+    <button class="btn-replay" id="btnReplay">↻ Replay</button>
+  </div>
+  <div class="heart-burst big" id="finalBurst"></div>
+</section>
+
+<!-- Audio -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="music.mp3" type="audio/mpeg" />
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
