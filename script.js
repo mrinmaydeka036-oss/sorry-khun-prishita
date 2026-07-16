@@ -144,9 +144,7 @@ sign.classList.add('show');
     goTo('question');
 });
   
-  document.getElementById('btnYes').addEventListener('click', () => {
-    goTo('video');
-    playVideo();
+  document.getElementById('btnYes').addEventListener('click', playVideo);
 });
   video.addEventListener('ended', showFinal);
   btnSkip.addEventListener('click', showFinal);
