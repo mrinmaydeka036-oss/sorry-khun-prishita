@@ -143,8 +143,11 @@ sign.classList.add('show');
   btnContinue.addEventListener('click', () => {
     goTo('question');
 });
-
-document.getElementById('btnYes').addEventListener('click', playVideo);
+  
+  document.getElementById('btnYes').addEventListener('click', () => {
+    goTo('video');
+    playVideo();
+});
   video.addEventListener('ended', showFinal);
   btnSkip.addEventListener('click', showFinal);
 
