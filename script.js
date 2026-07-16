@@ -19,6 +19,12 @@ I love you. More than words. More than time.`;
   const video = $('romanticVideo');
   let soundOn = true;
 $('soundIcon').textContent = '🔊';
+  const stages = {
+  envelope: $('stageEnvelope'),
+  letter: $('stageLetter'),
+  video: $('stageVideo'),
+  final: $('stageFinal'),
+};
 
   /* ---------- Background particles ---------- */
   function spawn(container, className, count, styler) {
@@ -153,6 +159,9 @@ $('soundIcon').textContent = '🔊';
     envelope.classList.remove('open');
     envWrap.classList.remove('zooming');
     goTo('envelope');
+    btnContinue.addEventListener('click', showQuestion);
+
+    document.getElementById('btnYes').addEventListener('click', playVideo);
   });
 })();
       
