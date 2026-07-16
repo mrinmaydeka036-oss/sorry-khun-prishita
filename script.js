@@ -18,10 +18,8 @@ I love you. More than words. More than time.`;
   const music = $('bgMusic');
   const video = $('romanticVideo');
   let soundOn = true;
-$('soundIcon').textContent = '🔊',
-  };
-  
-  
+  love.mp3.play().catch(()=>{});
+
   /* ---------- Background particles ---------- */
   function spawn(container, className, count, styler) {
     for (let i = 0; i < count; i++) {
@@ -66,8 +64,9 @@ $('soundIcon').textContent = '🔊',
   /* ---------- Sound ---------- */
   $('soundToggle').addEventListener('click', () => {
     soundOn = !soundOn;
-    $('soundIcon').textContent = soundOn ? '🔊' ;
-    music.play().catch(()=>{});
+    $('soundIcon').textContent = soundOn ? '🔊' : '🔇';
+    if (soundOn) music.play().catch(()=>{}); else music.pause();
+  });
 
   /* ---------- Heart burst ---------- */
   function heartBurst(container, count = 24) {
@@ -155,9 +154,6 @@ $('soundIcon').textContent = '🔊',
     envelope.classList.remove('open');
     envWrap.classList.remove('zooming');
     goTo('envelope');
-    btnContinue.addEventListener('click', showQuestion);
-
-    document.getElementById('btnYes').addEventListener('click', playVideo);
   });
 })();
-      
+        
