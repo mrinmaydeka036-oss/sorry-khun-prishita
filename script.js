@@ -112,7 +112,10 @@ I love you. More than words. More than time.`;
         setTimeout(tick, speed);
       } else {
         body.classList.add('done');
-        sign.classList.add('show');
+sign.classList.add('show');
+        
+        music.pause();
+        music.currentTime = 0;
         setTimeout(() => btnContinue.classList.add('show'), 700);
       }
     };
